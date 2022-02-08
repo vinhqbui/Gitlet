@@ -1,0 +1,58 @@
+# Status with two adds
+I mysetup.inc
+> commit "add a and b"
+<<<
+> branch proj3
+<<<
+> status
+=== Branches ===
+\*master
+proj3
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+${ARBLINES}
+
+<<<*
+> log
+===
+${HEADER}
+${DATE}
+add a and b
+
+===
+${HEADER}
+${DATE}
+initial commit
+
+<<<*
+> checkout proj3
+<<<
++ c.txt c.txt
+> add c.txt
+<<<
+> commit "add c.txt"
+<<<
+> log
+===
+${HEADER}
+${DATE}
+add c.txt
+
+===
+${HEADER}
+${DATE}
+add a and b
+
+===
+${HEADER}
+${DATE}
+initial commit
+
+<<<*
+

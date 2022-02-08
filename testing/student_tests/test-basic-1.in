@@ -1,0 +1,39 @@
+# Status with two adds
+I mysetup.inc
+> commit "add two files"
+<<<
+> rm a.txt
+<<<
+> status
+=== Branches ===
+\*master
+
+=== Staged Files ===
+
+=== Removed Files ===
+a.txt
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+${ARBLINES}
+
+<<<*
+> commit "removed a.txt"
+<<<
+> status
+=== Branches ===
+\*master
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+${ARBLINES}
+
+<<<*
+# File was not tracked, so make sure it's still there
+= b.txt b.txt

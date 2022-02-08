@@ -1,0 +1,40 @@
+# Status with two adds
+I mysetup.inc
+> commit "add a and b"
+<<<
+> rm a.txt
+<<<
+> status
+=== Branches ===
+\*master
+
+=== Staged Files ===
+
+=== Removed Files ===
+a.txt
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+${ARBLINES}
+
+<<<*
+> commit "removed a.txt"
+<<<
+> log
+===
+${HEADER}
+${DATE}
+removed a.txt
+
+===
+${HEADER}
+${DATE}
+add a and b
+
+===
+${HEADER}
+${DATE}
+initial commit
+
+<<<*
